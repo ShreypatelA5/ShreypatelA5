@@ -1,25 +1,75 @@
+/* Apply a modern font to the entire page */
 body {
-    font-family: sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Style the table for a clean and organized look */
 table {
     border-collapse: collapse;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Style table header cells */
 th,
 td {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
     text-align: left;
 }
 
+/* Highlight header cells with a subtle background color */
 th {
     background-color: #f2f2f2;
+    font-weight: bold;
 }
 
-input[type=text],input[type=email],input[type=number] {
+/* Style form input fields for a consistent and clean look */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
     width: 90%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Apply a smoother transition effect when input fields are focused */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+}
+
+/* Style submit buttons for a modern and clickable appearance */
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Apply a color change when the submit button is hovered */
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Add spacing below input fields for better readability */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"] {
+    margin-bottom: 1rem;
 }
