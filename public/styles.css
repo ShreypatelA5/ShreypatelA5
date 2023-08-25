@@ -3,6 +3,12 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Automatically generate a background image using Unsplash API */
+body {
+    background: url('https://source.unsplash.com/1920x1080/?nature') no-repeat center center fixed;
+    background-size: cover;
+}
+
 /* Style the table for a clean and organized look */
 table {
     border-collapse: collapse;
@@ -72,4 +78,12 @@ input[type="email"],
 input[type="number"],
 input[type="submit"] {
     margin-bottom: 1rem;
+}
+
+/* Note: Every time you refresh the page, a new background image will be generated */
+.note {
+    text-align: center;
+    color: #777;
+    margin-top: 1rem;
+    font-size: 0.8rem;
 }
